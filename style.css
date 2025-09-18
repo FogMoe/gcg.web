@@ -1,10 +1,4 @@
-/*
 
-Tooplate 2141 Minimal White
-
-https://www.tooplate.com/view/2141-minimal-white
-
-*/
 
 @charset "utf-8";
 
@@ -409,6 +403,44 @@ https://www.tooplate.com/view/2141-minimal-white
             background: transparent;
             color: #000;
             transform: translate(-5px, -5px);
+        }
+
+        /* Secondary button - less emphasis */
+        .cta-button.secondary {
+            background: #fff;
+            color: #444;
+            border-color: #bbb;
+        }
+
+        .cta-button.secondary::before {
+            /* remove decorative corner for secondary */
+            display: none;
+        }
+
+        .cta-button.secondary:hover {
+            background: #f7f7f7;
+            color: #222;
+            border-color: #999;
+            transform: translate(-3px, -3px);
+        }
+
+        /* In a button group, hide decorative corner for all CTAs to avoid visual conflict */
+        .button-group .cta-button::before {
+            display: none;
+        }
+
+        /* Balance hover shift inside button group */
+        .button-group .cta-button:not(.secondary):hover {
+            transform: translate(-4px, -4px);
+        }
+
+        /* Button group for multiple CTAs */
+        .button-group {
+            display: inline-flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         /* Section 2: About - Mixed Layouts */
@@ -1494,6 +1526,10 @@ https://www.tooplate.com/view/2141-minimal-white
 
             .hero-decoration {
                 display: none;
+            }
+
+            .button-group {
+                gap: 12px;
             }
 
             .hero::before,

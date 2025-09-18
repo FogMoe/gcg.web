@@ -1,10 +1,4 @@
-/*
 
-Tooplate 2141 Minimal White
-
-https://www.tooplate.com/view/2141-minimal-white
-
-*/
 
 // JavaScript Document
 
